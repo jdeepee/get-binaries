@@ -32,19 +32,19 @@ jobs:
       uses: ncipollo/release-action@v1
       with:
         artifacts: "./temp/binary/holochain"
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.RELEASE_TOKEN }}
         allowUpdates: true
 
     - name: Upload the hc binary
       uses: ncipollo/release-action@v1
       with:
         artifacts: "./temp/binary/hc"
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.RELEASE_TOKEN }}
         allowUpdates: true
 
     - name: Upload the lair binary
       uses: ncipollo/release-action@v1
       with:
         artifacts: "./temp/binary/lair-keystore"
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.RELEASE_TOKEN }}
         allowUpdates: true
