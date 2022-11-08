@@ -34,6 +34,7 @@ jobs:
         artifacts: "./temp/binary/holochain"
         token: ${{ secrets.RELEASE_TOKEN }}
         allowUpdates: true
+        tag: "v0.1.0"
 
     - name: Upload the hc binary
       uses: ncipollo/release-action@v1
@@ -41,6 +42,7 @@ jobs:
         artifacts: "./temp/binary/hc"
         token: ${{ secrets.RELEASE_TOKEN }}
         allowUpdates: true
+        tag: "v0.1.0"
 
     - name: Upload the lair binary
       uses: ncipollo/release-action@v1
@@ -48,3 +50,4 @@ jobs:
         artifacts: "./temp/binary/lair-keystore"
         token: ${{ secrets.RELEASE_TOKEN }}
         allowUpdates: true
+        tag: "v0.1.0"
