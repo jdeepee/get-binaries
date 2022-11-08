@@ -16,9 +16,9 @@ jobs:
       env:
         SQLCIPHER_STATIC: 1
       run: |
-        cargo install lair_keystore --version 0.2.0
-        cargo install holochain --version 0.0.161
-        cargo install holochain_cli --version 0.0.56
+        cargo install lair_keystore --version 0.2.0 --locked
+        cargo install holochain --version 0.0.161 --locked
+        cargo install holochain_cli --version 0.0.56 --locked
 
         [ ! -d "./temp/binary" ] && mkdir -p "./temp/binary"
         [ -f "./temp/binary/holochain" ] && rm -f ./temp/binary/holochain
